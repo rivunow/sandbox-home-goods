@@ -5,6 +5,7 @@
   "price": "29.00",
   "availability": "in stock",
   "condition": "new",
+  "image_suffixes": ["main", "lifestyle-1", "lifestyle-2", "lifestyle-3"],
   "products": [
     {
       "sku": "mug",

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check generated feeds/pages against the manifest and require 24 1000px JPEGs."""
+"""Check generated feeds/pages and all manifest-listed 1000px JPEGs."""
 import argparse
 import csv
 import json
@@ -114,7 +114,7 @@ def validate(catalog, output, skip_images=False):
     errors = []
     base = catalog["base_url"]
     products = catalog["products"]
-    expected_images = {f"images/{p['sku']}-{suffix}.jpg" for p in products for suffix in ("main", "lifestyle-1", "lifestyle-2")}
+    expected_images = {f"images/{p['sku']}-{suffix}.jpg" for p in products for suffix in catalog["image_suffixes"]}
 
     def check(condition, message):
         if not condition:
@@ -134,7 +134,7 @@ def validate(catalog, output, skip_images=False):
                 id_field: sku, "title": product["title"], "description": product["description"],
                 "availability": "in stock", "condition": "new", "price": "29.00 USD",
                 "link": base + f"products/{sku}.html", "image_link": base + f"images/{sku}-main.jpg",
-                "additional_image_link": ",".join(base + f"images/{sku}-lifestyle-{i}.jpg" for i in (1, 2)),
+                "additional_image_link": ",".join(base + f"images/{sku}-{suffix}.jpg" for suffix in catalog["image_suffixes"][1:]),
                 "brand": catalog["brand"], "google_product_category": product["google_product_category"],
             }
             check(by_sku.get(sku) == expected, f"{filename}: {sku} differs from manifest or URL contract")
@@ -158,7 +158,7 @@ def validate(catalog, output, skip_images=False):
         if not page:
             continue
         url = base + name
-        images = [base + f"images/{sku}-{suffix}.jpg" for suffix in ("main", "lifestyle-1", "lifestyle-2")]
+        images = [base + f"images/{sku}-{suffix}.jpg" for suffix in catalog["image_suffixes"]]
         expected_metadata = {
             "og:title": product["title"], "og:description": product["description"], "og:url": url,
             "og:image": images[0], "og:type": "product", "product:brand": catalog["brand"],
@@ -223,7 +223,7 @@ def validate(catalog, output, skip_images=False):
                 errors.append(f"{name}: {error}")
     if errors:
         raise ValueError("\n".join(errors))
-    images_note = "image checks SKIPPED (not release ready)" if skip_images else "24 JPEG headers verified at 1000x1000"
+    images_note = "image checks SKIPPED (not release ready)" if skip_images else f"{len(expected_images)} JPEG headers verified at 1000x1000"
     print(f"PASS: 8 SKUs, both CSVs, 9 pages, product metadata, visible values, and local links; {images_note}")
 
 

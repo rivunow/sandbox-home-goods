@@ -35,6 +35,11 @@ def load_catalog(path, base_url=None):
             raise ValueError(f"manifest {field} must be a nonempty string")
     if (catalog["currency"], catalog["price"], catalog["availability"], catalog["condition"]) != ("USD", "29.00", "in stock", "new"):
         raise ValueError("this sandbox requires USD 29.00, in stock, and new for every item")
+    suffixes = catalog["image_suffixes"]
+    if (not isinstance(suffixes, list) or not suffixes or suffixes[0] != "main"
+            or len(set(suffixes)) != len(suffixes)
+            or any(not re.fullmatch(r"lifestyle-[1-9][0-9]*", suffix) for suffix in suffixes[1:])):
+        raise ValueError("image_suffixes must start with main and contain unique lifestyle image suffixes")
     products = catalog["products"]
     if len(products) != 8 or {p["sku"] for p in products} != SKUS:
         raise ValueError("manifest must contain the eight approved SKUs exactly once")
@@ -47,8 +52,8 @@ def load_catalog(path, base_url=None):
     return catalog
 
 
-def image_paths(product):
-    return [f"images/{product['sku']}-{suffix}.jpg" for suffix in ("main", "lifestyle-1", "lifestyle-2")]
+def image_paths(catalog, product):
+    return [f"images/{product['sku']}-{suffix}.jpg" for suffix in catalog["image_suffixes"]]
 
 
 def product_url(catalog, product):
@@ -56,7 +61,7 @@ def product_url(catalog, product):
 
 
 def feed_row(catalog, product, id_field):
-    images = [catalog["base_url"] + path for path in image_paths(product)]
+    images = [catalog["base_url"] + path for path in image_paths(catalog, product)]
     return {
         id_field: product["sku"], "title": product["title"], "description": product["description"],
         "availability": catalog["availability"], "condition": catalog["condition"],
@@ -126,20 +131,20 @@ def homepage(catalog):
     for product in products:
         cards.append(f'''        <li>
           <a class="product-card" href="products/{product['sku']}.html">
-            <div class="card-image">{image_tag(image_paths(product)[0], product['title'])}</div>
+            <div class="card-image">{image_tag(image_paths(catalog, product)[0], product['title'])}</div>
             <div class="card-caption"><h3>{escape(product['title'])}</h3><p>${escape(catalog['price'])} <span>USD</span></p></div>
             <p class="card-material">{escape(product['material'])}</p>
           </a>
         </li>''')
     description = "Eight simple objects in stoneware, linen, wood, glass, and more. Browse the Studio SHG Eight collection."
-    return head(catalog, catalog["brand"], description, catalog["base_url"], catalog["base_url"] + image_paths(mug)[0]) + '</head>\n' + header(catalog) + f'''  <main id="main">
+    return head(catalog, catalog["brand"], description, catalog["base_url"], catalog["base_url"] + image_paths(catalog, mug)[0]) + '</head>\n' + header(catalog) + f'''  <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
         <h1 id="hero-title">A little room<br>for the everyday.</h1>
         <p>Eight simple objects. Quiet colors, familiar materials, and shapes that feel at home.</p>
         <a class="collection-link" href="#collection">Explore the collection</a>
       </div>
-      <a class="hero-image" href="products/mug.html" aria-label="View the ivory stoneware mug">{image_tag(image_paths(mug)[0], 'Matte ivory stoneware mug with a large rounded handle', lazy=False)}</a>
+      <a class="hero-image" href="products/mug.html" aria-label="View the ivory stoneware mug">{image_tag(image_paths(catalog, mug)[0], 'Matte ivory stoneware mug with a large rounded handle', lazy=False)}</a>
     </section>
     <section id="collection" class="collection wrap" aria-labelledby="collection-title">
       <div class="section-heading"><h2 id="collection-title">The collection</h2><p>Objects for your everyday spaces.</p></div>
@@ -152,7 +157,7 @@ def homepage(catalog):
 
 
 def product_page(catalog, product):
-    images = image_paths(product)
+    images = image_paths(catalog, product)
     url = product_url(catalog, product)
     schema = {
         "@context": "https://schema.org", "@type": "Product", "sku": product["sku"],
@@ -164,7 +169,8 @@ def product_page(catalog, product):
     }
     # Escape '<' so manifest text cannot terminate the inline JSON script element.
     jsonld = json.dumps(schema, ensure_ascii=False, indent=2).replace("<", "\\u003c")
-    thumbnails = "\n".join(f'''          <a href="#view-{i + 1}" aria-label="View {label.lower()} of {escape(product['title'])}">{image_tag('../' + path, '', lazy=True)}<span>{label}</span></a>''' for i, (path, label) in enumerate(zip(images, ("Studio view", "Styled view 1", "Styled view 2"))))
+    labels = ["Studio view", *[f"Styled view {i}" for i in range(1, len(images))]]
+    thumbnails = "\n".join(f'''          <a href="#view-{i + 1}" aria-label="View {label.lower()} of {escape(product['title'])}">{image_tag('../' + path, '', lazy=True)}<span>{label}</span></a>''' for i, (path, label) in enumerate(zip(images, labels)))
     figures = "\n".join(f'''        <figure id="view-{i + 1}" class="gallery-view">
           {image_tag('../' + path, product['title'] + (' — studio view' if i == 0 else f' — styled view {i}'), lazy=i > 0)}
           <figcaption>{('Studio view' if i == 0 else f'Styled view {i}')}</figcaption>
