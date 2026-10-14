@@ -1,0 +1,175 @@
+{
+  "tool": "built-in image_gen",
+  "generated_on": "2026-10-14",
+  "normalization": "1000x1000 RGB JPEG quality95; primary transparent cutout framed to75% longest dimension onto pure#FFFFFF white; lifestyle square resampling only.",
+  "assets": [
+    {
+      "sku": "mug",
+      "kind": "main",
+      "source_filename": "exec-58e136ae-98ba-4cba-be7d-e886b2ee0a1f.png",
+      "reference_filename": "exec-e0b0768a-4318-4b96-9bfc-81646b1b1af3.png",
+      "prompt": "Use case: background-extraction. Edit the supplied product photograph. Preserve this EXACT unbranded product, its shape, material, color, proportions and view. Remove the entire white background and every contact/drop shadow. The entire backdrop must be truly transparent alpha=0, including outer canvas and holes such as mug handle or tote loops. No fake transparency pattern. Keep full product centered with generous margin, product occupying approximately75% of square canvas longest dimension. No props, logos, text, badges or watermarks. This transparent cutout will be flattened to exact solid white for a final1000x1000JPEG ecommerce catalog primary."
+    },
+    {
+      "sku": "mug",
+      "kind": "lifestyle-1",
+      "source_filename": "exec-53ebfdbc-2260-4667-941d-fe8a2be13a11.png",
+      "reference_filename": "exec-e0b0768a-4318-4b96-9bfc-81646b1b1af3.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product on a pale oak kitchen counter beside folded natural linen, warm morning sunlight from a window, quiet home kitchen with soft blurred background. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "mug",
+      "kind": "lifestyle-2",
+      "source_filename": "exec-0dac056d-a2e9-4aca-9462-6eac4de794de.png",
+      "reference_filename": "exec-e0b0768a-4318-4b96-9bfc-81646b1b1af3.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product on a walnut side table beside a simple upholstered armchair, warm evening light, a quiet living room with muted green walls. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "tote",
+      "kind": "main",
+      "source_filename": "exec-f6f6fce6-b86f-44b6-8dc6-50fa55148fac.png",
+      "reference_filename": "exec-1a3f13a5-3e2b-413d-b25f-d74b4bee1305.png",
+      "prompt": "Use case: background-extraction. Edit the supplied product photograph. Preserve this EXACT unbranded product, its shape, material, color, proportions and view. Remove the entire white background and every contact/drop shadow. The entire backdrop must be truly transparent alpha=0, including outer canvas and holes such as mug handle or tote loops. No fake transparency pattern. Keep full product centered with generous margin, product occupying approximately75% of square canvas longest dimension. No props, logos, text, badges or watermarks. This transparent cutout will be flattened to exact solid white for a final1000x1000JPEG ecommerce catalog primary."
+    },
+    {
+      "sku": "tote",
+      "kind": "lifestyle-1",
+      "source_filename": "exec-f19af7dd-b28b-4230-b7d3-120e7f8144d4.png",
+      "reference_filename": "exec-1a3f13a5-3e2b-413d-b25f-d74b4bee1305.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product hanging naturally from a wooden peg on a warm entryway wall beside a simple wooden bench, soft afternoon sunlight. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "tote",
+      "kind": "lifestyle-2",
+      "source_filename": "exec-08286f74-9a70-438b-88d4-698ee6d9df83.png",
+      "reference_filename": "exec-1a3f13a5-3e2b-413d-b25f-d74b4bee1305.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product standing naturally on a woven rattan chair in a calm living room, tan throw in background, warm realistic natural window light. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "board",
+      "kind": "main",
+      "source_filename": "exec-a1f33112-8ef6-4e2a-ad1d-f2759a6ee980.png",
+      "reference_filename": "exec-da159334-b213-45b3-adfd-c6c9f0d426d1.png",
+      "prompt": "Use case: background-extraction. Edit the supplied product photograph. Preserve this EXACT unbranded product, its shape, material, color, proportions and view. Remove the entire white background and every contact/drop shadow. The entire backdrop must be truly transparent alpha=0, including outer canvas and holes such as mug handle or tote loops. No fake transparency pattern. Keep full product centered with generous margin, product occupying approximately75% of square canvas longest dimension. No props, logos, text, badges or watermarks. This transparent cutout will be flattened to exact solid white for a final1000x1000JPEG ecommerce catalog primary."
+    },
+    {
+      "sku": "board",
+      "kind": "lifestyle-1",
+      "source_filename": "exec-ed55bd45-1fe4-4fcf-b63b-f24891eb89ff.png",
+      "reference_filename": "exec-da159334-b213-45b3-adfd-c6c9f0d426d1.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product standing leaning slightly against a light stone backsplash on an oak kitchen counter, warm afternoon sunlight, empty clean board fully visible. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "board",
+      "kind": "lifestyle-2",
+      "source_filename": "exec-fca9f770-a8f9-4d92-96ed-b3bbcdc6c9fd.png",
+      "reference_filename": "exec-da159334-b213-45b3-adfd-c6c9f0d426d1.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product lying flat on a wood kitchen island beside a folded plain linen napkin, view from a gentle overhead angle, warm home kitchen light. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "pillow",
+      "kind": "main",
+      "source_filename": "exec-9240d24b-a69f-4baa-91a2-55a77bef82f0.png",
+      "reference_filename": "exec-66ba40b5-06e8-4256-a051-fbabac276f57.png",
+      "prompt": "Use case: background-extraction. Edit the supplied product photograph. Preserve this EXACT unbranded product, its shape, material, color, proportions and view. Remove the entire white background and every contact/drop shadow. The entire backdrop must be truly transparent alpha=0, including outer canvas and holes such as mug handle or tote loops. No fake transparency pattern. Keep full product centered with generous margin, product occupying approximately75% of square canvas longest dimension. No props, logos, text, badges or watermarks. This transparent cutout will be flattened to exact solid white for a final1000x1000JPEG ecommerce catalog primary."
+    },
+    {
+      "sku": "pillow",
+      "kind": "lifestyle-1",
+      "source_filename": "exec-35bce085-c2f9-4800-bf96-1b9f99b5f27d.png",
+      "reference_filename": "exec-66ba40b5-06e8-4256-a051-fbabac276f57.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product resting naturally on a charcoal gray fabric sofa in a sunlit living room, plain warm wood furnishings in background. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "pillow",
+      "kind": "lifestyle-2",
+      "source_filename": "exec-a90dce7c-423f-406a-bbee-b3ac23c14a55.png",
+      "reference_filename": "exec-66ba40b5-06e8-4256-a051-fbabac276f57.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product on a woven rattan armchair in a quiet bedroom corner, warm morning light, soft neutral linen curtains. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "bottle",
+      "kind": "main",
+      "source_filename": "exec-07a17b3a-f2d3-4f14-8ef8-298dea506ce6.png",
+      "reference_filename": "exec-703671fa-8713-4718-8183-989acb3af27b.png",
+      "prompt": "Use case: background-extraction. Edit the supplied product photograph. Preserve this EXACT unbranded product, its shape, material, color, proportions and view. Remove the entire white background and every contact/drop shadow. The entire backdrop must be truly transparent alpha=0, including outer canvas and holes such as mug handle or tote loops. No fake transparency pattern. Keep full product centered with generous margin, product occupying approximately75% of square canvas longest dimension. No props, logos, text, badges or watermarks. This transparent cutout will be flattened to exact solid white for a final1000x1000JPEG ecommerce catalog primary."
+    },
+    {
+      "sku": "bottle",
+      "kind": "lifestyle-1",
+      "source_filename": "exec-f4f06eb4-d1df-4c9f-882c-32e4960ec378.png",
+      "reference_filename": "exec-703671fa-8713-4718-8183-989acb3af27b.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product standing upright on a walnut desk beside a blank closed notebook, cozy home study, warm natural window light. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "bottle",
+      "kind": "lifestyle-2",
+      "source_filename": "exec-fa39dec5-b54f-40e4-b63f-247ac50bdf0e.png",
+      "reference_filename": "exec-703671fa-8713-4718-8183-989acb3af27b.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product standing upright on a pale wooden entryway bench, soft warm afternoon light, neutral textured wall and blurred houseplant in background. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "vase",
+      "kind": "main",
+      "source_filename": "exec-a08ea39d-8612-4e76-9052-6925db384102.png",
+      "reference_filename": "exec-5ddb3795-a044-4599-a88e-c640e8e32663.png",
+      "prompt": "Use case: background-extraction. Edit the supplied product photograph. Preserve this EXACT unbranded product, its shape, material, color, proportions and view. Remove the entire white background and every contact/drop shadow. The entire backdrop must be truly transparent alpha=0, including outer canvas and holes such as mug handle or tote loops. No fake transparency pattern. Keep full product centered with generous margin, product occupying approximately75% of square canvas longest dimension. No props, logos, text, badges or watermarks. This transparent cutout will be flattened to exact solid white for a final1000x1000JPEG ecommerce catalog primary."
+    },
+    {
+      "sku": "vase",
+      "kind": "lifestyle-1",
+      "source_filename": "exec-c56b5381-d613-4c63-baa0-280659547826.png",
+      "reference_filename": "exec-5ddb3795-a044-4599-a88e-c640e8e32663.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product standing empty on an oak console table near a window, warm natural sunlight, quiet living room with linen curtains. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "vase",
+      "kind": "lifestyle-2",
+      "source_filename": "exec-7c0a5175-9909-4138-9c4c-921d839a9469.png",
+      "reference_filename": "exec-5ddb3795-a044-4599-a88e-c640e8e32663.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product standing empty on a walnut shelf in a warm modern dining room, subtle afternoon light, muted neutral walls. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "organizer",
+      "kind": "main",
+      "source_filename": "exec-7bc549f7-3761-4e76-a67c-c5aa188bd7d1.png",
+      "reference_filename": "exec-8bb97e85-ee01-4832-8cd2-73fa8d58dcf9.png",
+      "prompt": "Use case: background-extraction. Edit the supplied product photograph. Preserve this EXACT unbranded product, its shape, material, color, proportions and view. Remove the entire white background and every contact/drop shadow. The entire backdrop must be truly transparent alpha=0, including outer canvas and holes such as mug handle or tote loops. No fake transparency pattern. Keep full product centered with generous margin, product occupying approximately75% of square canvas longest dimension. No props, logos, text, badges or watermarks. This transparent cutout will be flattened to exact solid white for a final1000x1000JPEG ecommerce catalog primary."
+    },
+    {
+      "sku": "organizer",
+      "kind": "lifestyle-1",
+      "source_filename": "exec-135ee50d-b2bc-4bfd-9847-16087ea4d0d0.png",
+      "reference_filename": "exec-8bb97e85-ee01-4832-8cd2-73fa8d58dcf9.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product on a wooden home office desk, containing just two plain unbranded wooden pencils in one compartment, no visible writing, warm window light. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "organizer",
+      "kind": "lifestyle-2",
+      "source_filename": "exec-d646ac54-39c8-4c5e-9aac-af7a729baa9d.png",
+      "reference_filename": "exec-8bb97e85-ee01-4832-8cd2-73fa8d58dcf9.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product empty on an oak console in a cozy living room, fully visible three compartments, warm natural light and neutral wall behind. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "coaster",
+      "kind": "main",
+      "source_filename": "exec-2bd3dd94-b74e-417c-bb3f-a070995218f7.png",
+      "reference_filename": "exec-6e6299ea-3999-4073-a28f-19683cf0ef4d.png",
+      "prompt": "Use case: background-extraction. Edit the supplied product photograph. Preserve this EXACT unbranded product, its shape, material, color, proportions and view. Remove the entire white background and every contact/drop shadow. The entire backdrop must be truly transparent alpha=0, including outer canvas and holes such as mug handle or tote loops. No fake transparency pattern. Keep full product centered with generous margin, product occupying approximately75% of square canvas longest dimension. No props, logos, text, badges or watermarks. This transparent cutout will be flattened to exact solid white for a final1000x1000JPEG ecommerce catalog primary."
+    },
+    {
+      "sku": "coaster",
+      "kind": "lifestyle-1",
+      "source_filename": "exec-0944c789-15b3-4caa-82ff-14efed4c5151.png",
+      "reference_filename": "exec-6e6299ea-3999-4073-a28f-19683cf0ef4d.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product lying on a pale oak coffee table beside, not underneath, a plain ivory mug, warm sunlit living room, coaster entirely visible. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    },
+    {
+      "sku": "coaster",
+      "kind": "lifestyle-2",
+      "source_filename": "exec-0a944b92-355a-4694-8514-1a69090dd8e7.png",
+      "reference_filename": "exec-6e6299ea-3999-4073-a28f-19683cf0ef4d.png",
+      "prompt": "Use case: compositing. Create ONE square photorealistic lifestyle ecommerce photo using the supplied product as the exact identity reference. Place this same single product lying on a walnut bedside table beside a plain clear drinking glass, soft warm bedroom light, coaster fully visible. Preserve the exact product silhouette, proportions, color, material texture, cap/handle/compartment design from the reference. It must look like the same SKU photographed in a real home. Make the product the clear hero and sharpest focus, fully inside the frame, about50–65% of canvas; plausible scale, placement and contact shadows. Other background objects must be generic, unobtrusive and unbranded. No people, duplicate hero products, lettering, readable text, logos, badges, watermarks or graphics anywhere. Generate highresolution square source for final1000x1000JPEG."
+    }
+  ]
+}

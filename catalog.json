@@ -1,0 +1,74 @@
+{
+  "brand": "Studio SHG Eight",
+  "base_url": "https://rivunow.github.io/sandbox-home-goods/",
+  "currency": "USD",
+  "price": "29.00",
+  "availability": "in stock",
+  "condition": "new",
+  "products": [
+    {
+      "sku": "mug",
+      "title": "Ivory stoneware mug",
+      "description": "A matte ivory stoneware mug with a large rounded handle. Its simple, softly curved shape holds 350 ml.",
+      "material": "Stoneware",
+      "detail": "Matte ivory finish · 350 ml",
+      "google_product_category": "Home & Garden > Kitchen & Dining > Tableware > Drinkware > Mugs"
+    },
+    {
+      "sku": "tote",
+      "title": "Natural canvas tote",
+      "description": "A natural canvas tote with tan cotton handles. An open, uncomplicated shape for the things you carry each day.",
+      "material": "Canvas and cotton",
+      "detail": "Natural canvas · Tan cotton handles",
+      "google_product_category": "Apparel & Accessories > Handbags, Wallets & Cases > Handbags"
+    },
+    {
+      "sku": "board",
+      "title": "Walnut cutting board",
+      "description": "A rectangular walnut cutting board with subtly rounded corners and a small hanging hole. Natural wood grain gives the flat surface its character.",
+      "material": "Walnut",
+      "detail": "Rounded corners · Small hanging hole",
+      "google_product_category": "Home & Garden > Kitchen & Dining > Kitchen Tools & Utensils > Cutting Boards"
+    },
+    {
+      "sku": "pillow",
+      "title": "Oatmeal linen pillow",
+      "description": "A square throw pillow in oatmeal linen. A soft, neutral texture for a sofa, armchair, or quiet corner.",
+      "material": "Linen",
+      "detail": "Square shape · Oatmeal linen",
+      "google_product_category": "Home & Garden > Decor > Throw Pillows"
+    },
+    {
+      "sku": "bottle",
+      "title": "Sage insulated bottle",
+      "description": "An insulated stainless steel bottle with a matte sage finish and a matching screw cap. A clean, simple shape for daily use.",
+      "material": "Stainless steel",
+      "detail": "Matte sage finish · Matching screw cap",
+      "google_product_category": "Home & Garden > Kitchen & Dining > Food & Beverage Carriers > Water Bottles"
+    },
+    {
+      "sku": "vase",
+      "title": "Clear glass vase",
+      "description": "A clear cylindrical glass vase with a straight-sided silhouette. Its transparent shape leaves room for a few stems or a simple arrangement.",
+      "material": "Glass",
+      "detail": "Clear glass · Cylindrical shape",
+      "google_product_category": "Home & Garden > Decor > Vases"
+    },
+    {
+      "sku": "organizer",
+      "title": "Bamboo desk organizer",
+      "description": "A light bamboo desk organizer with three open compartments. A simple place for pens, small stationery, and everyday desk items.",
+      "material": "Bamboo",
+      "detail": "Light bamboo · Three open compartments",
+      "google_product_category": "Office Supplies > Filing & Organization > Desk Organizers"
+    },
+    {
+      "sku": "coaster",
+      "title": "Natural cork coaster",
+      "description": "A round, thick coaster in natural cork. Its warm texture and simple circular shape sit comfortably beside a cup or glass.",
+      "material": "Cork",
+      "detail": "Natural cork · Round, thick profile",
+      "google_product_category": "Home & Garden > Kitchen & Dining > Barware > Coasters"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+name: Publish storefront
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: 'Exact HTTPS site base, including repository path'
+        required: true
+        default: 'https://rivunow.github.io/sandbox-home-goods/'
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Check the build contract
+        run: python3 -m unittest discover -s tests -v
+      - name: Build and validate the public artifact
+        env:
+          SITE_BASE_URL: ${{ inputs.base_url }}
+        run: |
+          python3 scripts/build.py --base-url "$SITE_BASE_URL"
+          python3 scripts/validate.py --base-url "$SITE_BASE_URL"
+      - name: Upload public files only
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
